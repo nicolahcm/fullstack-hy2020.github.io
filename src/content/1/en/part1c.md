@@ -624,6 +624,8 @@ Since we now have an easily reusable <i>Button</i> component, we've also impleme
 
 The event handler is passed to the <i>Button</i> component through the _handleClick_ prop. The name of the prop itself is not that significant, but our naming choice wasn't completely random. React's own official [tutorial](https://reactjs.org/tutorial/tutorial.html) suggests this convention.
 
+Moreover, notice that the children component Button is able to access the scoped function setCounter of the parent, as we passed it down as a prop. In particular, the children is able to modify the state of the parent component. 
+
 ### Changes in state cause rerendering
 
 <!-- Kerrataan vielä sovelluksen toiminnan pääperiaatteet.  -->
